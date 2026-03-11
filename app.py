@@ -44,7 +44,7 @@ if api_key:
     if uploaded_files:
         documents=[]
         for uploaded_file in uploaded_files:
-            temppdf=f"./temp.pdf"
+            temppdf = "/tmp/temp.pdf"
             with open(temppdf,"wb") as file:
                 file.write(uploaded_file.getvalue())
                 file_name=uploaded_file.name
