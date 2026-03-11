@@ -30,7 +30,7 @@ api_key=st.text_input("Enter your Groq API key:",type="password")
 
 ## Check if groq api key is provided
 if api_key:
-    llm=ChatGroq(groq_api_key=api_key,model_name="llama3-8b-8192")
+    llm=ChatGroq(groq_api_key=api_key,model_name="llama-3.3-70b-versatile")
 
     ## chat interface
 
