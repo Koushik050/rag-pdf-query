@@ -15,7 +15,10 @@ import os
 
 
 hf_token = os.environ.get("HF_TOKEN")
-embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs={"token": hf_token}
+)
 
 
 ## set up Streamlit 
